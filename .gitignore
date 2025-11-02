@@ -1,0 +1,6 @@
+*.csv
+*.xlsx
+__pycache__/
+venv_wolmar/
+.vscode/
+.env

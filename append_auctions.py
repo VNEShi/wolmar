@@ -83,7 +83,7 @@ else:
     df_new = df_old
 
 # Анализируем монеты после 1989 года
-df_coins_after_1989 = df_new[~df_new['year'].isna()]
+df_coins_after_1989 = df_new[(~df_new['year'].isna()) & (df_new['year']!='')]
 df_coins_after_1989['year'] = df_coins_after_1989['year'].astype('int')
 df_coins_after_1989 = df_coins_after_1989[df_coins_after_1989['year']>1989]
 
